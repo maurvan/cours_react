@@ -1,0 +1,12 @@
+.author {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.element > p {
+    margin: 0;
+}
+
+.content-message {
+    font-style: italic;
+}
