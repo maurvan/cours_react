@@ -7,6 +7,8 @@ import Message from './components/message/message';
 import Person from './components/person/person';
 import FruitList from './components/fruit-list/fruit-list';
 import SchoolMemberList from './components/school-member-list/school-member-list';
+import SimpleEvent from './components/simple-event/simple-event';
+import MultiNumber from './components/multi-number/multi-number';
 
 function App() {
 
@@ -39,6 +41,14 @@ function App() {
                 <hr />
 
                 < SchoolMemberList members={people} />
+
+                <hr />
+
+                < SimpleEvent />
+
+                <hr />
+
+                < MultiNumber />
             </header>
         </div>
     );

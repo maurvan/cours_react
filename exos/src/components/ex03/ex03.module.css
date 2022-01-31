@@ -1,0 +1,27 @@
+.divCompteur {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.divCompteur p {
+    margin-right: 10px;
+}
+
+.divCompteur button {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: darkcyan;
+    color: whitesmoke;
+    border: none;
+    margin-right: 5px;
+}
+
+.zero {
+    color: red;
+}
+
+.size {
+    font-size: 1.3rem;
+}

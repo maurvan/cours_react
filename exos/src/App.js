@@ -2,6 +2,7 @@ import './App.css';
 import { nanoid } from 'nanoid'; // npm i nanoid
 import Ex01 from './components/ex01/ex01';
 import Ex02 from './components/ex02/ex02';
+import Compteur from './components/ex03/ex03';
 
 function App() {
   const productsList = [
@@ -18,6 +19,8 @@ function App() {
     <>
       < Ex01 nom="Maureen" age={30} />
       < Ex02 products={productsList} />
+      < Compteur step={1} />
+      < Compteur step={5} />
     </>
   );
 }
