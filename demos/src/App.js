@@ -9,6 +9,7 @@ import FruitList from './components/fruit-list/fruit-list';
 import SchoolMemberList from './components/school-member-list/school-member-list';
 import SimpleEvent from './components/simple-event/simple-event';
 import MultiNumber from './components/multi-number/multi-number';
+import FormulaireTest from './components/formulaire-test/formulaire-test';
 
 function App() {
 
@@ -49,6 +50,10 @@ function App() {
                 <hr />
 
                 < MultiNumber />
+
+                <hr />
+
+                < FormulaireTest />
             </header>
         </div>
     );

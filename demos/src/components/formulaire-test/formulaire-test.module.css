@@ -1,0 +1,13 @@
+.myForm label:first-child {
+    font-weight: bold;
+}
+
+.myForm label:first-child::after {
+    content: ":";
+    margin-left: 1ch;
+    margin-right: 2ch;
+}
+
+.myForm textarea {
+    resize: none;
+}
