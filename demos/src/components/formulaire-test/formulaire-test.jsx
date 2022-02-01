@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import style from './formulaire-test.module.css';
 
 const FormulaireTest = (props) => {
-
+    // hook d'etat
     const [prenom, setPrenom] = useState('')
     const [nom, setNom] = useState('')
     const [email, setEmail] = useState('')
@@ -12,6 +12,7 @@ const FormulaireTest = (props) => {
     const [typeSucre, setTypeSucre] = useState(false)
     const [typeSale, setTypeSale] = useState(false)
 
+    // binding
     const handleSubmit = (e) => {
         e.preventDefault()
 
@@ -32,6 +33,7 @@ const FormulaireTest = (props) => {
         handleResetForm()
     }
 
+    // pour reset le form
     const handleResetForm = () => {
         setPrenom('')
         setNom('')
@@ -89,13 +91,15 @@ const FormulaireTest = (props) => {
                     <label htmlFor="peanuts_non">Non</label>
                 </div>
 
-                <div>
-                    <label htmlFor="peanutsType">Quel type de cacahuètes ?</label>
-                    <input type="checkbox" id="sucre" onChange={(e) => setTypeSucre(e.target.checked)} checked={typeSucre} />
-                    <label htmlFor="sucre">Sucrées</label>
-                    <input type="checkbox" id="sale" onChange={(e) => setTypeSale(e.target.checked)} checked={typeSale} />
-                    <label htmlFor="sale">Salées</label>
-                </div>
+                {peanuts === 'oui' && (
+                    <div>
+                        <label htmlFor="peanutsType">Quel type de cacahuètes ?</label>
+                        <input type="checkbox" id="sucre" onChange={(e) => setTypeSucre(e.target.checked)} checked={typeSucre} />
+                        <label htmlFor="sucre">Sucrées</label>
+                        <input type="checkbox" id="sale" onChange={(e) => setTypeSale(e.target.checked)} checked={typeSale} />
+                        <label htmlFor="sale">Salées</label>
+                    </div>
+                )}
 
                 <div>
                     <button type="submit">Envoyer</button>

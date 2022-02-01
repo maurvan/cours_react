@@ -1,0 +1,8 @@
+.formCalc label::after {
+    content: ': '
+}
+
+.formCalc {
+    margin-bottom: 20px;
+    text-align: center;
+}
