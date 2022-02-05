@@ -1,5 +1,5 @@
 // ici on importe tout ce dont on a besoin
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/welcome/welcome';
@@ -12,6 +12,7 @@ import MultiNumber from './components/multi-number/multi-number';
 import FormulaireTest from './components/formulaire-test/formulaire-test';
 import Reservoir from './components/reservoir/reservoir';
 import SearchBar from './components/search-bar/search-bar';
+import Counter from './components/counter/counter';
 
 function App() {
 
@@ -39,6 +40,13 @@ function App() {
     // Pour le SearchBar
     const handleSearchResult = (data) => {
         console.log('on recherche ' + data)
+    }
+
+    // Pour le Counter
+    const [display, setDisplay] = useState(true)
+
+    const handleToggleDisplay = () => {
+        setDisplay(d => !d) // toggle true & false
     }
 
     return (
@@ -86,6 +94,13 @@ function App() {
                 <hr />
 
                 < SearchBar onSearch={handleSearchResult} />
+
+                <hr />
+
+                <button onClick={handleToggleDisplay}>Jour / Nuit</button>
+                {display && (
+                    < Counter />
+                )}
             </header>
         </div>
     );
