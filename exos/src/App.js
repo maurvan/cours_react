@@ -4,6 +4,7 @@ import Ex01 from './components/ex01/ex01';
 import Ex02 from './components/ex02/ex02';
 import Compteur from './components/ex03/ex03';
 import Ex04 from './components/ex04/ex04';
+import Ex06 from './components/ex06/ex06';
 
 function App() {
   const productsList = [
@@ -23,6 +24,7 @@ function App() {
       < Compteur step={1} />
       < Compteur step={5} />
       < Ex04 />
+      < Ex06 />
     </>
   );
 }
