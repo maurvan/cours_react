@@ -1,5 +1,5 @@
 // ici on importe tout ce dont on a besoin
-import React, {useEffect, useState} from 'react'
+import React, { useState } from 'react'
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/welcome/welcome';
@@ -13,6 +13,15 @@ import FormulaireTest from './components/formulaire-test/formulaire-test';
 import Reservoir from './components/reservoir/reservoir';
 import SearchBar from './components/search-bar/search-bar';
 import Counter from './components/counter/counter';
+
+/* REACT... c'est quoi?
+    - Générer des interfaces web
+    - Application web SPA (Single Page Application)
+        -> pas de reload côté client
+        MAIS il y a un système de routing (react-router)
+    - Développé sous forme de composants
+        · Simple a manipuler
+        · Ré-utilisation */
 
 function App() {
 
@@ -101,6 +110,10 @@ function App() {
                 {display && (
                     < Counter />
                 )}
+
+                <hr />
+
+
             </header>
         </div>
     );

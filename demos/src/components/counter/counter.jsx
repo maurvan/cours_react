@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 /* DEMO 06 - LE CYCLE DE VIE */
 
