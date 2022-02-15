@@ -9,7 +9,7 @@ const PokemonInfo = ({name, legendary, color, habitat, captureRate, flavorText})
             )}
 
             <p><b>Color:</b> {color}</p>
-            <p><b>Habitat:</b> {habitat}</p>
+            <p><b>Habitat:</b> {habitat ?? 'Inconnu'}</p>
             <p><b>Capture Rate:</b> {captureRate}</p>
 
             <p><b>Text:</b> {flavorText}</p>

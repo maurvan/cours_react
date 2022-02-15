@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Loading from '../../components/loading/loading';
+import PokemonInfo from '../../components/pokemon/pokemon-info';
 
 /* DEMO 08 - AJAX */
 
@@ -39,6 +41,13 @@ const PokemonSearch = () => {
     return (
         <div>
             <button onClick={handleSearchPokemon}>Rechercher un Pokemon</button>
+            {chargement ? (
+                < Loading />
+            ) : error ? (
+                <h2>{error}</h2>
+            ) : pokemonData !== null && (
+                < PokemonInfo {...pokemonData} />
+            )}
         </div>
     )
 }
