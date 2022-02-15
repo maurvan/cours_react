@@ -21,6 +21,7 @@ Message.defaultProps = {
 
 // Check si le typage est bon
 // Nécéssite d'installer 'prop-types' (ou bien on utilise typescript)
+// -> Uniquement pour le dev
 Message.propTypes = {
     author: PropTypes.string, // on attends un string
     content: PropTypes.string.isRequired

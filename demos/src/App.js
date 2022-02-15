@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import logo from './logo.svg';
 import './App.css';
-import Welcome from './components/welcome/welcome';
+import Welcome from './containers/welcome/welcome';
 import Message from './components/message/message';
 import Person from './components/person/person';
 import FruitList from './components/fruit-list/fruit-list';
@@ -13,6 +13,7 @@ import FormulaireTest from './components/formulaire-test/formulaire-test';
 import Reservoir from './components/reservoir/reservoir';
 import SearchBar from './components/search-bar/search-bar';
 import Counter from './components/counter/counter';
+import PokemonSearch from './containers/pokemon-search/pokemon-search';
 
 /* REACT... c'est quoi?
     - Générer des interfaces web
@@ -22,6 +23,10 @@ import Counter from './components/counter/counter';
     - Développé sous forme de composants
         · Simple a manipuler
         · Ré-utilisation */
+
+/* Organisation des dossiers:
+    - Components: composants ré-utilisables
+    - Containers: composants qu'on utilise qu'une seule fois (header, footer, etc) */
 
 function App() {
 
@@ -59,6 +64,8 @@ function App() {
     }
 
     return (
+        // Ecriture JSX
+        // Il doit TOUJOURS être encapsulé dans 1 élement (div ou fragment)
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
@@ -113,7 +120,7 @@ function App() {
 
                 <hr />
 
-
+                < PokemonSearch />
             </header>
         </div>
     );

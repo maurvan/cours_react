@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import style from './reservoir.module.css';
 
 /* l'envoi d'event vers un composant parent est possible en utilisant un callback à l'aide des props */
 /* App.js est le parent, reservoir.jsx est l'enfant */
@@ -29,7 +28,7 @@ const Reservoir = (props) => {
     }
 
     return (
-        <div className={style.reservoir}>
+        <div>
             <p>Le niveau du reservoir est de {niveau} sur {max} L</p>
             <button onClick={handleUp}>Ajouter 1L</button>
             <button onClick={handleDown}>Retirer 1L</button>

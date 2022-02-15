@@ -1,8 +1,22 @@
-const ContainerVideo = () => {
+import YouTube from "react-youtube";
+import style from './container-video.module.css';
+
+const ContainerVideo = (props) => {
+
+    const videoId = props.id
+
+    const options = {
+        height: '470',
+        width: '100%',
+        playerVars: {
+            // https://developers.google.com/youtube/player_parameters
+            autoplay: 0,
+        }
+    }
 
     return (
         <>
-            <p>*Insert video here*</p>
+            < YouTube videoId={videoId} opts={options} className={style.player} />
         </>
     )
 }
