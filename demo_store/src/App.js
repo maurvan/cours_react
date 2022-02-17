@@ -1,4 +1,6 @@
 import './App.css';
+import CounterAction from './containers/counter-action/counter-action';
+import CounterDisplay from './containers/counter-display/counter-display';
 
 /* DEMO 11 - LE STORE & REDUX */
 
@@ -14,12 +16,15 @@ import './App.css';
     a) Définition des actions possibles
     b) Définition du reducer des actions
     c) Configuration du store
+4. Diffusion du store dans l'app (mettre au niveau le plus haut possible) -> index.js
 */
 
 function App() {
   return (
     <div className="App">
-
+        <h1>Demo Redux</h1>
+        < CounterDisplay />
+        < CounterAction />
     </div>
   );
 }
