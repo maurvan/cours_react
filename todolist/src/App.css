@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(93, 202, 135);
+}
+
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: white;
+  color: rgb(93, 202, 135);
+  width: 60%;
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+h3 {
+  background-color: white;
+  width: 60%;
+  margin: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 5px;
+}
+
+.empty {
+  height: 20px;
+}

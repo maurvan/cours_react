@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Loading from '../../components/loading/loading';
-import PokemonInfo from '../../components/pokemon/pokemon-info';
+import PokemonInfo from '../../components/pokemon-info/pokemon-info';
 
 /* DEMO 08 - AJAX */
 

@@ -1,0 +1,46 @@
+h3 .title {
+    font-size: 1.5rem;
+}
+
+.containerNew {
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.formNew {
+    display: flex;
+    flex-direction: column;
+}
+
+.formNew div {
+    padding: 5px;
+}
+
+.formNew label {
+    margin-right: 10px;
+}
+
+.formNew textarea {
+    resize: none;
+}
+
+.formNew input[type="submit"] {
+    background-color: rgb(93, 202, 135);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(93, 202, 135);
+}
+
+.formNew input[type="submit"]:hover {
+    background-color: white;
+    color:rgb(93, 202, 135);
+}
+
+.formNom {
+    margin-right: 25px;
+}
