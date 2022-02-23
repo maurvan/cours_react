@@ -4,7 +4,8 @@ import {COUNTER_INCREMENT, COUNTER_DECREMENT, COUNTER_RESET} from './../actions/
 
 // Définir l'etat initial
 const initialState = {
-    count: 0
+    count: 0,
+    msg: 'Initial'
 }
 
 // Création de la méthode "reducer" (methode d'accumulation du state et de l'action)
@@ -14,17 +15,20 @@ export const counterReducer = (state = initialState, action) => { // la premiere
         case COUNTER_INCREMENT:
             return {
                 ...state, // permet de s'assurer qu'on ne perds aucune valeur de state
-                count: state.count + action.payload
+                count: state.count + action.payload,
+                msg: 'Incrementation'
             }
         case COUNTER_DECREMENT:
             return {
                 ...state,
-                count: state.count - action.payload
+                count: state.count - action.payload,
+                msg: 'Decrementation'
             }
         case COUNTER_RESET:
             return {
                 ...state,
-                count: 0 // ou "initialState.count"
+                count: 0, // ou "initialState.count"
+                msg: 'Reset'
             }
         default:
             return state; // TOUJOURS renvoyer le state dans le default !!!!!

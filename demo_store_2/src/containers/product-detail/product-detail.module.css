@@ -1,0 +1,11 @@
+.card {
+    border: 1px solid white;
+}
+
+.card img {
+    width: 400px;
+}
+
+.desc {
+    font-style: italic;
+}

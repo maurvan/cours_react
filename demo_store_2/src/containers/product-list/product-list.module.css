@@ -1,0 +1,21 @@
+li.product {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
+
+ul.productList {
+    list-style-type: none;
+    margin: 0;
+    width: 80%;
+}
+
+div.containerList {
+    width: 40vw;
+    height: 100vh;
+}
+
+span.name {
+    font-weight: bold;
+}

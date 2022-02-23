@@ -9,4 +9,4 @@ const reducer = combineReducers({
 })
 
 // On crée le store
-export default createStore(reducer)
+export default createStore(reducer);
