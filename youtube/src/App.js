@@ -8,7 +8,7 @@ function App() {
 
     const [videos, setVideos] = useState([])
 
-    const handleCreateList = (vid) => {
+    const handleCreateList = (vid, id) => {
         const newVideo = {
             vid: vid,
             id: id

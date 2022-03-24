@@ -27,7 +27,7 @@ const initialProductState = {
     selectedProduct: null
 }
 
-export const ProductReducer = (state = initialProductState, action) => {
+export const productReducer = (state = initialProductState, action) => {
     switch(action.type) {
         case PRODUCT_SELECTION :
             return {
